@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1299917_news_por.publisher_table_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>publisher_table_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 09:51:32</sys_created_on>
+        <sys_id>20f63617477371108dad50fe316d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1299917_news_por.publisher_table_user</sys_name>
+        <sys_package display_value="News Portal" source="x_1299917_news_por">fb31f253477371108dad50fe316d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="News Portal">fb31f253477371108dad50fe316d4358</sys_scope>
+        <sys_update_name>sys_user_role_20f63617477371108dad50fe316d4332</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-23 09:51:32</sys_updated_on>
+    </sys_user_role>
+</record_update>

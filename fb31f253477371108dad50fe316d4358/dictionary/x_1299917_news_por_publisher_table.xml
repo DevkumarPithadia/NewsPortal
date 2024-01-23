@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="94363297477371108dad50fe316d43e0" label="Publisher table" max_length="40" name="x_1299917_news_por_publisher_table" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Editor" max_length="40" name="u_editor" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Publisher" max_length="40" name="u_publisher" type="string"/>
+    </element>
+</database>

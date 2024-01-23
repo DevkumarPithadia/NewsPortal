@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ee52f293477371108dad50fe316d43a9" label="News" max_length="40" name="x_1299917_news_por_news" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Headline" max_length="200" name="headline" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Publisher" max_length="100" name="publisher" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="400" name="short_description" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="encode_utf8=false" label="Publisher name" max_length="32" name="u_reference_1" reference="x_1299917_news_por_publisher_table" type="reference"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_1"/>
+        </index>
+    </element>
+</database>

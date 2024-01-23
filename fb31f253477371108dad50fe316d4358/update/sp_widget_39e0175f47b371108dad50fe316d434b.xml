@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	c.onSubmit = function() {
+		c.data.temp1 = c.headline;
+		c.data.temp2 = c.shortDesc;
+		c.data.temp3 = c.publisher;
+		c.server.update();
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>news_insert_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>news insert widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	var gr = new GlideRecord('x_1299917_news_por_news');
+	if (input) {
+		gr.initialize();
+		gr.setValue('headline', input.headline);
+		gr.setValue('short_description', input.shortDesc);
+		gr.setValue('u_reference_1', input.publisher);
+		gr.insert();
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 11:44:57</sys_created_on>
+        <sys_id>39e0175f47b371108dad50fe316d434b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>news insert widget</sys_name>
+        <sys_package display_value="News Portal" source="x_1299917_news_por">fb31f253477371108dad50fe316d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="News Portal">fb31f253477371108dad50fe316d4358</sys_scope>
+        <sys_update_name>sp_widget_39e0175f47b371108dad50fe316d434b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-23 12:20:50</sys_updated_on>
+        <template><![CDATA[<div>
+  <h1>
+    Insert New Record
+  </h1>
+  <form>
+    Headline: <input type='text' name='headline' id='headline' ng-model=c.data.headline /><br>
+    Short Description: <input type='text' name='shortDesc' id="shortDesc" ng-model=c.data.shortDesc /><br>
+    Publisher: <input type='text' name='publisher' id='publisher' ng-model=c.data.publisher /><br>
+    <button ng-click="c.onSubmit()">
+      Submit
+    </button>
+  </form>
+</div>]]></template>
+    </sp_widget>
+</record_update>
